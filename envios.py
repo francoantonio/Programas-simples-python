@@ -9,7 +9,8 @@ init(autoreset=True)
 
 
 def menu():
-    print(Fore.YELLOW+'Programa para calcular el valor total de un envio de dinero\nsumando Los cargos y el iva')
+    print(Fore.YELLOW+'Programa para calcular el valor total de un envio de dinero sumando Los cargos y el iva'.center(
+        100, '*'))
     while True:
         print(Fore.YELLOW + """
 Eliga una opcion
@@ -20,12 +21,9 @@ Eliga una opcion
         opc = input("> ")
         system("clear")
         if int(opc) == 1:
-            #a, b, c = monto_exacto()
-            #print(a, b, c)
             monto_exacto()
         elif int(opc) == 2:
             tabla_random()
-            # menu()
         elif int(opc) == 3:
             print('Saliendo del programa')
             print('Muchas gracias ')

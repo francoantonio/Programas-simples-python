@@ -36,7 +36,8 @@ def calculo(monto):
 
 def tabla_random():
     while True:
-        print('Cuantos valores quieres que muestre\n[1-50]')
+        print(Fore.YELLOW + "cuantos valores quieres que muestre [1-50]".center(
+            100, '*'))
         valores = int(input('> '))
         system("clear")
         if (1 <= int(valores) <= 50):
@@ -56,7 +57,7 @@ def tabla_random():
 
 
 def monto_exacto():
-    print('Ingrese el monto deseado a enviar')
+
+    print(Fore.YELLOW + 'Ingrese el monto deseado a enviar'.center(100, '*'))
     monto_enviar = int(input('> $'))
     visualizador_datos(calculo(monto_enviar))
-
